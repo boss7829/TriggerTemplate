@@ -1,0 +1,38 @@
+public with sharing class Trigger_Object_Controller{
+    
+    /**
+     * @Created      Charles 2018/11/30
+     * @Description  beforeInsert function1
+     * @Created      Charles 2019/01/30
+     * @Description  beforeInsert function2     
+     * @Updated      Charles 2019/05/09
+     * @Description  update function2
+     */
+    public static void beforeInsert(List<SObject> insertObjs){
+
+    }
+
+    public static void beforeUpdate(List<SObject> updatedObjs, List<SObject> previousObjs){
+
+    }
+
+    public static void beforeDelete(List<SObject> deleteObjs){
+
+    }
+
+    public static void beforeUnDelete(List<SObject> unDeleteObjs){
+
+    }
+
+    public static void afterInsert(List<SObject> insertObjs){
+
+    }
+
+    public static void afterUpdate(List<SObject> updatedObjs, List<SObject> previousObjs){
+
+    }
+
+    public static void afterDelete(List<SObject> deleteObjs){
+
+    }
+}
