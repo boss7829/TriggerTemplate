@@ -2,8 +2,8 @@
 新增或修改需求時需新增註解
 
 /**
- * @Created      Charles 2018/11/30
- * @Description  beforeInsert function1
+* @Created      Charles 2018/11/30
+* @Description  beforeInsert function1
  
  */
  
