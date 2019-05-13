@@ -1,0 +1,27 @@
+trigger Trigger_Object_View on SOBJECT (before insert, before update, before delete, after insert, after update, after delete, after undelete){
+    if(Trigger.isBefore){
+        if(Trigger.isInsert){
+            Trigger_Object_Controller.beforeInsert(Trigger.new);
+        }
+        if(Trigger.isUpdate){
+            Trigger_Object_Controller.beforeUpdate(Trigger.new, Trigger.old);
+        }
+        if(Trigger.isDelete){
+            Trigger_Object_Controller.beforeDelete(Trigger.old);
+        }
+    }
+    if(Trigger.isAfter){
+        if(Trigger.isInsert){
+            Trigger_Object_Controller.afterInsert(Trigger.new);
+        }
+        if(Trigger.isUpdate){
+            Trigger_Object_Controller.afterUpdate(Trigger.new, Trigger.old);
+        }
+        if(Trigger.isDelete){
+            Trigger_Object_Controller.afterDelete(Trigger.old);
+        }
+        if(Trigger.isUnDelete){
+            Trigger_Object_Controller.beforeUnDelete(Trigger.old);
+        }
+    }
+}
